@@ -5,6 +5,7 @@ import { setupCounter } from './counter.ts'
 //import './bases/01-const-let'
 //import './bases/02-object.ts'
 //import './bases/03-arrays.ts'
+import './bases/04-functions.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
