@@ -26,7 +26,23 @@ const getUser2 = () =>
     ({
         uid: 'ABC-123',
         username: 'Tony001'
-    })
+    })      
 
+//-------------------------------------------------------------------------------------------------
 
-console.log(getUser2)
+const heroes = [
+    {
+        id: 1,
+        name: 'Batman',
+        //power: 'Money'
+    },
+    {
+        id:2,
+        name: 'Superman',
+        power: 'Super strength'
+    }
+]
+
+const hero = heroes.find( (h) => h.id === 1)
+
+console.log(hero?.power?.toUpperCase()) // el ? hace que se permitan valores indefinidos
