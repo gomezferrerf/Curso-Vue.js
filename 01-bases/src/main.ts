@@ -9,8 +9,9 @@ import { setupCounter } from './counter.ts'
 //import './bases/05-deses-obj.ts'
 //import './bases/07-imp-exp.ts'
 //import './bases/08-promises.ts'
-import './bases/09-fetch-api.ts'
-
+//import './bases/09-fetch-api.ts'
+//import './bases/10-axios.ts'
+import './bases/11-async-await.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
