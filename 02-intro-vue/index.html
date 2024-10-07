@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="myApp2">
+  <h1>Batman quotes</h1>
+  <input 
+    type="text" 
+    placeholder="Add qoute"
+    @keypress.enter="addQuote"
+    v-model="newMessage">
+
+  <br>
+  <br>
+
+  <button v-on:click="changeAuthorView"> Toggle Author</button>
+  <hr>
+  <ul>
+    <li v-for="({quote, author}, index) in batmanQuotes">
+      <span>{{index + 1}} - {{ quote }}</span>
+      <blockquote v-if="showAuthor">{{ author }}</blockquote> <!-- el v-if hace que pare de existir, mientras el v show solo no lo muestra -->
+
+
+
+    </li>
+  </ul>
+
+
+</div>
+
+
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
