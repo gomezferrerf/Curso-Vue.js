@@ -1,5 +1,7 @@
 <template>
-  <h1>Mi Segunda App</h1>
+  <IndecisionView></IndecisionView>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import IndecisionView from './View/IndecisionView.vue'
+</script>
